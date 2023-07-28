@@ -101,7 +101,6 @@ show_network_statistics() {
     netstat -s | grep -i "error\|drop"
 }
 
-
 show_memory_usage_by_processes() {
     echo "Memory Usage by Processes:"
     ps -eo pid,user,%mem,cmd --sort=-%mem | head -n 11
